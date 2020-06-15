@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Анкета</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<form action="">
+		<h1>Анкета на работу в GOOGLE</h1>
+		<p><i>Пожалуйста, заполните анкету. Обязательные поля помечены <em>*</em>.</i></p>
+		<fieldset>
+			<legend>Контактная информация</legend>
+
+			<label for="s_name">Фамилия<em>*</em></label>
+			<input type="text" id="s_name" placeholder="Иванов" required>
+			<br>
+			<label for="name">Имя<em>*</em></label>
+			<input type="text" id="name" placeholder="Иван" required>
+			<br>
+			<label for="f_name">Отчество</label>
+			<input type="text" id="f_name" placeholder="Иванович">
+			<br>
+			<label for="phone">Телефон<em>*</em></label>
+			<input type="text" id="phone" placeholder="+79787777777" required>
+			<br>
+			<label for="email">E-mail<em>*</em></label>
+			<input type="email" id="email" placeholder="example@mail.ru">
+		</fieldset>
+
+		<fieldset>
+			<legend>Персональная информация</legend>
+
+			<label for="date">Дата рождения<em>*</em></label>
+			<input type="date" id="date" min="1900-01-01" required>
+			<br>
+			<label for="gender">Пол</label>
+			<label for="gender1"><input type="radio" id="gender1" name="gender">Мужской</label>
+			<label for="gender2"><input type="radio" id="gender2" name="gender">Женский</label>
+			<label for="gender3"><input type="radio" id="gender3" name="gender" checked>Другой</label>
+			<br>
+			<label for="city">Ваш город</label>
+			<select id="city">
+				<option value="default" selected disabled>Выберите Ваш город</option>
+				<option value="Simf">Симферополь</option>
+				<option value="Sevas">Севастополь</option>
+				<option value="Yalta">Ялта</option>
+				<option value="Kerch">Керчь</option>
+				<option value="Sudak">Судак</option>
+			</select>
+			<br>
+			<label for="about">Раскажите о себе</label>
+			<textarea id="about" placeholder="Я умею..."></textarea>
+		</fieldset>
+
+		<fieldset>
+		<legend>Выберите языки программирования,которые вы изучали<em>*</em></legend>
+		<label for="yazik1"><input type="checkbox" name="lang" id="yazik1">Java</label>
+		<label for="yazik2"><input type="checkbox" name="lang" id="yazik2">Javascript</label>
+		<label for="yazik3"><input type="checkbox" name="lang" id="yazik3">Python</label>
+		<label for="yazik4"><input type="checkbox" name="lang" id="yazik4">Ruby</label>
+		<label for="yazik5"><input type="checkbox" name="lang" id="yazik5">PHP</label>
+		<label for="yazik6"><input type="checkbox" name="lang" id="yazik6">C#</label>
+		<label for="yazik7"><input type="checkbox" name="lang" id="yazik7">Basic</label>
+		<label for="yazik8"><input type="checkbox" name="lang" id="yazik8">C++</label>
+		<label for="yazik9"><input type="checkbox" name="lang" id="yazik9">Objective-C</label>
+		<label for="yazik10"><input type="checkbox" name="lang" id="yazik10">Haskell</label>	
+</fieldset>
+
+		<fieldset>
+		<legend>Дополнительно</legend>
+		<label for="photo">Фото профиля</label>
+		<input type="file" id="photo" required accept="image/*" onchange="readURL(this)">
+		<img id="picture" src="https://klike.net/uploads/posts/2018-12/1544870354_1.jpg">
+		<br>
+		<br>
+		<label for="color"><input type="color" id="color">Выберите цвет обводки</label>
+</fieldset>
+	
+	</form>
+	<button onclick="main()">Отправить</button>
+	<button onclick="tyomnaya()">Тёмная тема</button>
+</body>
+</html>

@@ -1,0 +1,70 @@
+form{
+	width:70%;
+	margin:auto;
+}
+
+h1{
+	text-align: center;
+	margin-bottom:0;
+	font-family: 'Russo One',sans-serif
+}
+
+p{
+	text-align: center;
+	margin-top: 0;
+	margin-bottom:50px;
+}
+
+em{
+	color:red;
+	font-weight: bolder;
+}
+
+legend{
+	font-family: 'Trebuchet',monospace;
+}
+
+fieldset{
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+input{
+	width: 300px;
+	border-radius: 5px;
+	outline:none;
+	padding: 3px 15px
+}
+
+label{
+	width: 150px;
+	display: inline-block;
+	vertical-align:top;
+	margin:2px;
+	font-family:'Kelly Slab';
+}
+
+input[type="radio"]{
+	width:20px;
+}
+
+input[type="date"]{
+	width: 125px;
+}
+
+select{
+	width:200px;
+	outline: none;
+	padding: 3px 15px;
+	border-radius: 5px;
+}
+
+textarea{
+	height: 100px;
+	resize:none;
+}
+
+input[type="checkbox"]{
+	margin: 4px;
+	width:40px;
+}
