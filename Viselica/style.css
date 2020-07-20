@@ -1,0 +1,51 @@
+h1{
+	color:black;
+	font-family:'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+body{
+	margin-left: 460px;
+	background:url(https://img2.labirint.ru/rcimg/33088af29fbce7e47472ae7c8be4e1cd/960x540/books50/494204/ph_1.jpg?1563853093);
+    background-size: cover;
+}
+
+button{
+	border-radius: 7px;
+	font-family:'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+input[type="text"]{
+	border-radius: 7px
+}
+
+input[type="checkbox"]{
+	margin-left:5px;
+}
+
+label[for="skip"]{
+	font-family:'Bradley Hand', cursive;
+}
+
+img{
+	margin-top: 40px
+}
+
+#tabu{
+	display: none;
+	color:black;
+	background-color: red;
+	word-break: 
+
+}
+
+#guess{
+	font-size:50px;
+	font-family:'Trebuchet MS', sans-serif 
+}
+
+
+
+
+
+
+
