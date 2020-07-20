@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Виселица</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/21.0.1/jcanvas.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<img src="https://goodprogrammer.ru/system/rich_texts/000/000/1773de5c6bec4d07d8c2a5b1cf1e5db1d2e6b3ca227/1.jpg?1429733479" width="400px" height="290px" alt="Фотография Виселица">
+	<h1>Введите ваше имя... </h1>
+	<input type="text" id="name" autofocus oninput="checkName(this.value)">
+	<div id="tabu"></div>
+	<button id="play" style="width:90px"  onclick="main()" disabled>Играть</button>
+	<label for="skip">Остаться инкогнито</label>
+	<input type="checkbox" id="skip">
+</body>
+</html>
