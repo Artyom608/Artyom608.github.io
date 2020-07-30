@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Лабиринт</title>
+</head>
+<body>
+    <h1 style="color:red">Лабиринт</h1>
+    <div class="wrap">
+   	<label for="width">Ширина</label>
+   	<span>x</span>
+   	<label for="height">Высота</label>
+   	<input type="range" id="width"  min="5" max="100" value="5" oninput="$('#w').text(this.value)">
+   	<span>x</span>
+   	<input type="range" id="height" min="5" max="100" value="5" oninput="$('#h').text(this.value)"> 
+   	<span id="w"></span>
+   	<button id="play" style="width:90px;height: 20px" onclick="play()">Играть</button>
+   	<span id="h"></span>
+</div>
+</body>
+</html>

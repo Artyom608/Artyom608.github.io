@@ -1,0 +1,39 @@
+#canv{
+	background-color: #eee;
+}
+
+.wrap{
+	display:flex;
+	flex-wrap:wrap;
+	width:300px;
+	justify-content: space-between;
+}
+
+label,input,span{
+	width:30%;
+	text-align: center
+}
+
+body{
+	font-family:'Neucha', monospace;
+}
+
+#play{
+	border-radius: 15px
+}
+
+.stat {
+    display:flex;
+    margin:40px;
+    font-family: 'Gill sans', cursive;
+    color: red;
+    font-weight: bolder;
+
+}
+
+p{
+	text-align:center;
+	font-family:'Bradley Hand', cursive;
+	font-size:5;
+}
+
